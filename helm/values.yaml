@@ -1,0 +1,6 @@
+image:
+  tag: production
+ingress:
+  host: demo.production.com
+service:
+  name: demo
