@@ -40,7 +40,7 @@ metadata:
   name: {{ template "fullname" . }}
   annotations:
     ingress.kubernetes.io/rewrite-target: /
-    kubernetes.io/ingress.class: ambassador
+    # kubernetes.io/ingress.class: ambassador
 spec:
   rules:
   - host: {{ template "fullname" . }}.{{ .Values.ingress.host }}
