@@ -17,6 +17,8 @@ spec:
       labels:
         app: {{ template "fullname" . }}
     spec:
+      imagePullSecrets:
+        - name: jfrog
       containers:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
